@@ -1,5 +1,5 @@
 FROM rocker/shiny:latest
-MAINTAINER Hugh A
+MAINTAINER Hugh Andersen
 
 ## Update and install git:
 RUN apt-get update && apt-get install -y git
