@@ -1,5 +1,5 @@
 FROM rocker/shiny:latest
-MAINTAINER Hugh
+MAINTAINER Hugh A
 
 ## Update and install git:
 RUN apt-get update && apt-get install -y git
@@ -14,8 +14,8 @@ RUN apt-get install -y libssl-dev &&  \
 RUN sudo R -e "install.packages(c('tidyverse','lubridate'), repos='http://cran.us.r-project.org')"
 
 ## Copy Shiny application into Docker container
-COPY app.R
-COPY data_iris.csv
+COPY app.R /
+COPY data_iris.csv /
 
 
 EXPOSE 3838
