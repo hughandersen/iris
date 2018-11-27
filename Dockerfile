@@ -11,10 +11,10 @@ MAINTAINER Hugh
 #    rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
 ## Install R Packages for Shiny app:
-RUN sudo R -e "install.packages(c('tidyverse','lubridate'), repos='http://cran.us.r-project.org')"
+#RUN sudo R -e "install.packages(c('tidyverse','lubridate'), repos='http://cran.us.r-project.org')"
 
 ## Copy Shiny application into Docker container
-COPY app.R /
+COPY app_iris.R /
 COPY data_iris.csv /
 
 
