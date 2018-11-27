@@ -1,6 +1,0 @@
-steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/optiontrader-223000/iris-image', '.' ]
-images:
-- 'gcr.io/optiontrader-223000/iris-image'
-timeout:2000s
