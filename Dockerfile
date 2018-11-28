@@ -1,5 +1,5 @@
 FROM rocker/shiny:latest
-MAINTAINER Hugh
+MAINTAINER HughA
 
 
 ## Copy Shiny application into Docker container
