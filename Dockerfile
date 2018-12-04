@@ -1,5 +1,5 @@
 FROM rocker/r-ver:devel
-MAINTAINER Hugh
+MAINTAINER HughA
 
 RUN apt-get update && apt-get install -y \
     sudo \
