@@ -1,5 +1,5 @@
 FROM rocker/shiny:latest
-MAINTAINER Hugh
+MAINTAINER HughA
 
 RUN R -e "install.packages(c('shiny', 'tidyverse'), repos='http://cran.rstudio.com/')"
 
